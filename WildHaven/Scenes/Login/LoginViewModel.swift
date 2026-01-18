@@ -11,6 +11,7 @@ extension LoginView {
     
     @Observable
     class ViewModel {
-        
+        var password: String = ""
+        var email: String = ""
     }
 }

@@ -10,44 +10,53 @@ import SwiftUI
 struct LoginView: View {
     
     @State private var viewModel = ViewModel()
-    @State private var password: String = ""
-    @State private var username: String = ""
     
     var body: some View {
-        ZStack {
-            gradientView
-                .ignoresSafeArea()
+        VStack {
+            topView
             VStack {
-                welcomeToText
-                titleText
-                Spacer()
                 usernameTextField
+                    .padding(.top)
                 passwordTextField
+                    .padding(.bottom)
                 loginButton
                     .padding(.top)
+                signUpButton
                 Spacer()
                 Spacer()
             }
             .padding()
         }
+        .ignoresSafeArea()
     }
 }
 
 //MARK: - Views -
 extension LoginView {
     
+    var topView: some View {
+            VStack  {
+                welcomeToText
+                    .padding(.top, 100)
+                titleText
+                    .padding(.bottom, 50)
+            }
+            .frame(maxWidth: .infinity)
+            .background(Color.green)
+    }
+    
     var welcomeToText: some View {
-        Text("Welcome to")
+        Text("welcome_to")
     }
     
     var titleText: some View {
-        Text("WildHaven")
+        Text("wildhaven")
             .font(.largeTitle)
             .bold()
     }
     
     var usernameTextField: some View {
-        TextField("Username", text: $username)
+        TextField("email_address", text: $viewModel.email)
             .padding(.horizontal)
             .frame(height: 44)
             .background(
@@ -55,10 +64,12 @@ extension LoginView {
                     .stroke(Color.gray, lineWidth: 1)
                     .fill(Color.clear)
             )
+            .keyboardType(.emailAddress)
+            .textContentType(.emailAddress)
     }
     
     var passwordTextField: some View {
-        SecureField("Password", text: $password)
+        SecureField("password", text: $viewModel.password)
             .padding(.horizontal)
             .frame(height: 44)
             .background(
@@ -66,21 +77,27 @@ extension LoginView {
                     .stroke(Color.gray, lineWidth: 1)
                     .fill(Color.clear)
             )
+            .textContentType(.password)
     }
     
     var loginButton: some View {
-        Button("Login") {
+        Button("login") {
             //
         }
+        .frame(maxWidth: .infinity, maxHeight: 44)
+        .foregroundStyle(Color.white)
         .background {
             RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.green, lineWidth: 1)
-                .fill(Color.clear)
+                .fill(Color.green)
         }
     }
     
-    var gradientView: some View {
-        LinearGradient(colors: [.green, .clear, .clear], startPoint: .bottom, endPoint: .top)
+    var signUpButton: some View {
+        Button("do_not_have_an_account") {
+            //
+        }
+        .foregroundStyle(Color.black)
+        .underline()
     }
 }
 
