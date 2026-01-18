@@ -30,6 +30,7 @@
 		EF0AF08C2EF0B2A0008A4735 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF0AF08B2EF0B2A0008A4735 /* PhoneNumberKit */; };
 		EF0AF08E2EF0B2A0008A4735 /* PhoneNumberKit-Static in Frameworks */ = {isa = PBXBuildFile; productRef = EF0AF08D2EF0B2A0008A4735 /* PhoneNumberKit-Static */; };
 		EF22DC782F1CDEDA00DC8447 /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF22DC772F1CDEDA00DC8447 /* Secret.plist */; };
+		EF22DC7B2F1CE58300DC8447 /* SecretModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22DC7A2F1CE57F00DC8447 /* SecretModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EF0AF05D2EF0A2FF008A4735 /* WildHavenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildHavenApp.swift; sourceTree = "<group>"; };
 		EF0AF0882EF0B017008A4735 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF22DC772F1CDEDA00DC8447 /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
+		EF22DC7A2F1CE57F00DC8447 /* SecretModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretModel.swift; sourceTree = "<group>"; };
 		EF74C29C2ED77CA100B6DE74 /* WildHaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildHaven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 		EF0AF0632EF0A321008A4735 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF22DC792F1CE57A00DC8447 /* Secret */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,6 +115,14 @@
 				EF22DC772F1CDEDA00DC8447 /* Secret.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		EF22DC792F1CE57A00DC8447 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				EF22DC7A2F1CE57F00DC8447 /* SecretModel.swift */,
+			);
+			path = Secret;
 			sourceTree = "<group>";
 		};
 		EF74C2932ED77CA100B6DE74 = {
@@ -230,6 +241,7 @@
 				EF0AF05F2EF0A2FF008A4735 /* ContentView.swift in Sources */,
 				EF0AF0602EF0A2FF008A4735 /* WildHavenApp.swift in Sources */,
 				EF0AF0892EF0B01C008A4735 /* Constants.swift in Sources */,
+				EF22DC7B2F1CE58300DC8447 /* SecretModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
