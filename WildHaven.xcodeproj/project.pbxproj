@@ -29,6 +29,7 @@
 		EF0AF0892EF0B01C008A4735 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AF0882EF0B017008A4735 /* Constants.swift */; };
 		EF0AF08C2EF0B2A0008A4735 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF0AF08B2EF0B2A0008A4735 /* PhoneNumberKit */; };
 		EF0AF08E2EF0B2A0008A4735 /* PhoneNumberKit-Static in Frameworks */ = {isa = PBXBuildFile; productRef = EF0AF08D2EF0B2A0008A4735 /* PhoneNumberKit-Static */; };
+		EF22DC782F1CDEDA00DC8447 /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF22DC772F1CDEDA00DC8447 /* Secret.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EF0AF05C2EF0A2FF008A4735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF0AF05D2EF0A2FF008A4735 /* WildHavenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildHavenApp.swift; sourceTree = "<group>"; };
 		EF0AF0882EF0B017008A4735 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF22DC772F1CDEDA00DC8447 /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		EF74C29C2ED77CA100B6DE74 /* WildHaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildHaven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,7 +76,7 @@
 				EF0AF0872EF0B00D008A4735 /* Helpers */,
 				EF0AF0632EF0A321008A4735 /* Models */,
 				EF0AF0622EF0A318008A4735 /* Services */,
-				EF0AF05B2EF0A2FF008A4735 /* Assets.xcassets */,
+				EF22DC762F1CDEC900DC8447 /* Supporting files */,
 				EF0AF05C2EF0A2FF008A4735 /* ContentView.swift */,
 				EF0AF05D2EF0A2FF008A4735 /* WildHavenApp.swift */,
 			);
@@ -101,6 +103,15 @@
 				EF0AF0882EF0B017008A4735 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF22DC762F1CDEC900DC8447 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EF0AF05B2EF0A2FF008A4735 /* Assets.xcassets */,
+				EF22DC772F1CDEDA00DC8447 /* Secret.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		EF74C2932ED77CA100B6DE74 = {
@@ -204,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF22DC782F1CDEDA00DC8447 /* Secret.plist in Resources */,
 				EF0AF0612EF0A2FF008A4735 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
