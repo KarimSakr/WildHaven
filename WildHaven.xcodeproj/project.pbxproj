@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF08D80E2F1CF695005E841D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08D80B2F1CF695005E841D /* LoginModel.swift */; };
+		EF08D80F2F1CF695005E841D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08D80C2F1CF695005E841D /* LoginView.swift */; };
+		EF08D8102F1CF695005E841D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08D80D2F1CF695005E841D /* LoginViewModel.swift */; };
 		EF0AF05F2EF0A2FF008A4735 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AF05C2EF0A2FF008A4735 /* ContentView.swift */; };
 		EF0AF0602EF0A2FF008A4735 /* WildHavenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0AF05D2EF0A2FF008A4735 /* WildHavenApp.swift */; };
 		EF0AF0612EF0A2FF008A4735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0AF05B2EF0A2FF008A4735 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF08D80B2F1CF695005E841D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		EF08D80C2F1CF695005E841D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EF08D80D2F1CF695005E841D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EF0AF05B2EF0A2FF008A4735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF0AF05C2EF0A2FF008A4735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF0AF05D2EF0A2FF008A4735 /* WildHavenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildHavenApp.swift; sourceTree = "<group>"; };
@@ -72,12 +78,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF08D80A2F1CF685005E841D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EF08D8112F1CF69A005E841D /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF08D8112F1CF69A005E841D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF08D80B2F1CF695005E841D /* LoginModel.swift */,
+				EF08D80C2F1CF695005E841D /* LoginView.swift */,
+				EF08D80D2F1CF695005E841D /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		EF0AF05E2EF0A2FF008A4735 /* WildHaven */ = {
 			isa = PBXGroup;
 			children = (
 				EF0AF0872EF0B00D008A4735 /* Helpers */,
 				EF0AF0632EF0A321008A4735 /* Models */,
 				EF0AF0622EF0A318008A4735 /* Services */,
+				EF08D80A2F1CF685005E841D /* Scenes */,
 				EF22DC762F1CDEC900DC8447 /* Supporting files */,
 				EF0AF05C2EF0A2FF008A4735 /* ContentView.swift */,
 				EF0AF05D2EF0A2FF008A4735 /* WildHavenApp.swift */,
@@ -240,6 +265,9 @@
 			files = (
 				EF0AF05F2EF0A2FF008A4735 /* ContentView.swift in Sources */,
 				EF0AF0602EF0A2FF008A4735 /* WildHavenApp.swift in Sources */,
+				EF08D80E2F1CF695005E841D /* LoginModel.swift in Sources */,
+				EF08D80F2F1CF695005E841D /* LoginView.swift in Sources */,
+				EF08D8102F1CF695005E841D /* LoginViewModel.swift in Sources */,
 				EF0AF0892EF0B01C008A4735 /* Constants.swift in Sources */,
 				EF22DC7B2F1CE58300DC8447 /* SecretModel.swift in Sources */,
 			);
